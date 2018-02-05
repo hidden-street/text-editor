@@ -1,5 +1,5 @@
 {
-  "name": "js-texteditor",
+  "name": "@john-dorian/text-editor",
   "version": "1.0.0",
   "description": "📜 A text editor, for JD is a great poet",
   "main": "index.js",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/john-dorian/text-editor#readme",
   "devDependencies": {
     "eslint": "^4.17.0"
+  },
+  "dependencies": {
+    "@john-dorian/core": "^1.0.0"
   }
 }
