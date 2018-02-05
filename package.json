@@ -1,0 +1,28 @@
+{
+  "name": "js-texteditor",
+  "version": "1.0.0",
+  "description": "📜 A text editor, for JD is a great poet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-dorian/text-editor.git"
+  },
+  "keywords": [
+    "js",
+    "text",
+    "editor",
+    "text-editor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-dorian/text-editor/issues"
+  },
+  "homepage": "https://github.com/john-dorian/text-editor#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0"
+  }
+}
