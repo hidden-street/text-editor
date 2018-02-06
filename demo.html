@@ -12,7 +12,31 @@
 	</style>
 </head>
 <body>
-	<textarea name="" id="" cols="30" rows="10" class="jd-text-editor textarea">This is an example message with some <strong>bold</strong> and some <em>italic</em> text. Oh, and here is a <sup>superscript</sup> and a <sub>subscript</sub>.</textarea>
+	<header class="hero is-primary">
+		<div class="container">
+			<div class="hero-body">
+				<h1 class="title">Text editor</h1>
+				<h2 class="subtitle">Demo page</h2>
+			</div>
+		</div>
+	</header>
+
+	<div class="section">
+		<form action="" class="container">
+			<div class="field">
+				<label for="example-editor" class="label">Demo editor</label>
+				<textarea name="example" id="example-editor" cols="30" rows="10" data-base-url="https://github.com/" data-jd-text-editor data-buttons-tpl="jd-text-editor-buttons-tpl" data-single-button-tpl="jd-text-editor-single-button-tpl" class="textarea">This is an example message with some <strong>bold</strong> and some <em>italic</em> text. Oh, and here is a <sup>superscript</sup> and a <sub>subscript</sub>. Also, here is an image: <img src="favicon.ico" alt="GitHub Favicon"></textarea>
+			</div>
+
+			<template id="jd-text-editor-buttons-tpl">
+				<div class="field" data-inject-buttons></div>
+			</template>
+
+			<template id="jd-text-editor-single-button-tpl">
+				<button type="button" class="button" title="{{ title }}" data-button data-icon="format_{{ id }}">{{ content }}</button>
+			</template>
+		</form>
+	</div>
 	<script src="./index.js"></script>
 </body>
 </html>
