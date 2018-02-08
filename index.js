@@ -12,13 +12,6 @@ class JD_TextEditor {
 			this.buttons = options.buttons;
 		}
 
-		if (typeof options.buttonsAreaClassName === 'string') {
-			this.buttonsAreaClassName = options.buttonsAreaClassName;
-		}
-		else {
-			this.buttonsAreaClassName = 'jd-text-editor-buttons';
-		}
-
 		if (options.buttonsTpl && document.getElementById(options.buttonsTpl)) {
 			this.buttonsTpl = document.getElementById(options.buttonsTpl);
 		}
@@ -78,7 +71,6 @@ class JD_TextEditor {
 	}
 	createButtons() {
 		if (this.buttons) {
-
 			Object.entries(this.buttons).forEach((entry) => {
 				const [id, button] = entry;
 

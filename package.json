@@ -1,6 +1,6 @@
 {
   "name": "@john-dorian/text-editor",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "📜 A text editor, for JD is a great poet",
   "main": "index.js",
   "scripts": {
