@@ -5,7 +5,7 @@ class JD_TextEditor {
 		if (typeof options === 'undefined') {
 			options = {};
 		}
-		
+
 		this.baseURL = options.baseUrl || '';
 
 		if (Array.isArray(options.buttons)) {
@@ -114,7 +114,7 @@ class JD_TextEditor {
 							this.textarea.value = this.editorArea.innerHTML;
 						}
 					}, false);
-				}	
+				}
 
 				this.containerButtonsParent.appendChild(btn);
 			});
@@ -134,34 +134,26 @@ class JD_TextEditor {
 JD_TextEditor.prototype.buttons = {
 	bold: {
 		content: '𝐁',
-		icon: 'format_bold',
-		className: 'bold',
 		title: 'Toggle bold',
 		command: 'bold'
 	},
 	italic: {
 		content: 'ⅈ',
-		icon: 'format_italic',
-		className: 'italic',
 		title: 'Toggle italic',
 		command: 'italic'
 	},
 	sup: {
 		content: '²',
-		className: 'superscript',
 		title: 'Toggle superscript',
 		command: 'superscript'
 	},
 	sub: {
 		content: '₂',
-		className: 'subscript',
 		title: 'Toggle subscript',
 		command: 'subscript'
 	},
 	image: {
 		content: '📷',
-		icon: 'image',
-		className: 'img',
 		title: 'Insert an image',
 		customCommand: () => {
 			var imageSrc;
@@ -179,8 +171,6 @@ JD_TextEditor.prototype.buttons = {
 	},
 	clear: {
 		content: '🗑',
-		icon: 'format_clear',
-		className: 'removeFormat',
 		title: 'Remove all formatting',
 		command: 'removeFormat'
 	}
