@@ -9,6 +9,9 @@
 	[hidden] {
 		display: none;
 	}
+	.textarea {
+		white-space: pre;
+	}
 	</style>
 </head>
 <body>
@@ -25,7 +28,13 @@
 		<form action="" class="container">
 			<div class="field">
 				<label for="example-editor" class="label">Demo editor</label>
-				<textarea name="example" id="example-editor" cols="30" rows="10" data-base-url="https://github.com/" data-jd-text-editor data-buttons-tpl="jd-text-editor-buttons-tpl" data-single-button-tpl="jd-text-editor-single-button-tpl" class="textarea">This is an example message with some <strong>bold</strong> and some <em>italic</em> text. Oh, and here is a <sup>superscript</sup> and a <sub>subscript</sub>. Also, here is an image: <img src="favicon.ico" alt="GitHub Favicon"></textarea>
+				<textarea name="example" id="example-editor" cols="30" rows="10" data-base-url="https://github.com/" data-jd-text-editor data-buttons-tpl="jd-text-editor-buttons-tpl" data-single-button-tpl="jd-text-editor-single-button-tpl" class="textarea">This is an example message with some <strong>bold</strong> and some <em>italic</em> text.
+
+Oh, and here is a <sup>superscript</sup> and a <sub>subscript</sub>.
+
+Also, here is an image: <img src="favicon.ico" alt="GitHub Favicon">.
+
+And here is <a href="https://github.com/john-dorian/">a link</a>!</textarea>
 			</div>
 
 			<template id="jd-text-editor-buttons-tpl">

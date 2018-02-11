@@ -144,11 +144,28 @@ JD_TextEditor.prototype.buttons = {
 		title: 'Toggle subscript',
 		command: 'subscript'
 	},
+	link: {
+		content: '🌐',
+		title: 'Insert a link',
+		customCommand: () => {
+			let linkHref;
+
+			do {
+				linkHref = window.prompt('Target URL', 'https://');
+			} while (linkHref === '');
+
+			if (typeof linkHref !== 'string') {
+				return;
+			}
+
+			document.execCommand('createLink', false, linkHref);
+		}
+	},
 	image: {
 		content: '📷',
 		title: 'Insert an image',
 		customCommand: () => {
-			var imageSrc;
+			let imageSrc;
 
 			do {
 				imageSrc = window.prompt('Image URL', 'https://');
