@@ -9,3 +9,5 @@ A simple WYSIWYM text editor for the JD framework
 All you need to make it work is to insert the proper JS file and the `data-jd-text-editor` attribute on your textarea. That's all!
 
 For more advanced use cases, please see the [full documentation](https://john-dorian.github.io/docs/text-editor/).
+
+*[WYSIWYM]: What You See Is What You Mean
